@@ -12,7 +12,7 @@ header {
   text-align: right;
 }
 
-header img {
+.header-img{
   width: 100%;
 }
 
@@ -124,7 +124,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.item__chk {
   margin: 0 10px;
 }
 
@@ -139,13 +139,13 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-.button-delete img {
+.delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete img:hover {
+.delete-icon:hover {
   transform: rotateZ(0);
 }
 
