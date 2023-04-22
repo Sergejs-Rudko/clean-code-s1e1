@@ -12,7 +12,7 @@ header {
   text-align: right;
 }
 
-.header-img{
+.header__img {
   width: 100%;
 }
 
@@ -44,13 +44,9 @@ main {
   display: flex;
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0;
-}
-
-li {
-  list-style: none;
 }
 
 input,
@@ -60,7 +56,7 @@ input,
 
 .button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -112,6 +108,7 @@ h3:first-child {
 
 /* Task list */
 .list__item {
+  list-style: none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -120,7 +117,7 @@ h3:first-child {
   align-items: center;
 }
 
-li > * {
+.list__item > * {
   vertical-align: middle;
 }
 
@@ -135,7 +132,7 @@ li > * {
   width: 226px;
 }
 
-.list__item > .task {
+.list__item .task {
   width: 226px;
 }
 
@@ -150,21 +147,21 @@ li > * {
 }
 
 /* Completed */
-#completed-tasks .task {
+#completed-tasks .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list__item input[type=text] {
+.list__item .item__input {
   display: none;
 }
 
-.list__item-edit-mode input[type=text] {
+.list__item-edit-mode .item__input {
   display:inline-block;
   width: 224px;
 }
 
-.list__item-edit-mode label {
+.list__item-edit-mode .item__label {
   display: none;
 }
